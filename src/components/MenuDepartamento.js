@@ -48,7 +48,7 @@ export default class MenuDepartamento extends Component {
                                     {
                                         this.state.status &&
                                         this.state.departamentos.map((departamento, index) => {
-                                            return <li key={index}><NavLink to={"detalles-empleados-departamento/" + departamento.numero} className='dropdown-item'>{departamento.nombre}</NavLink></li>
+                                            return <li key={index}><NavLink to={"detalle-equipo/" + departamento.idEquipo} className='dropdown-item'>{departamento.nombre}</NavLink></li>
                                         })
                                     }
                                 </ul>
